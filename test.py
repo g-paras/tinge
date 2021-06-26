@@ -1,4 +1,5 @@
 from tinge import colored
+from tinge.utils import InvalidColorError
 
 
 def test_red():
@@ -13,7 +14,10 @@ def test_green():
 
 def test_invalid_color():
     string = "This should raise an error"
-    print(colored(string, "raise"))
+    try:
+        print(colored(string, "raise"))
+    except InvalidColorError:
+        print('Success')
 
 
 if __name__ == "__main__":
