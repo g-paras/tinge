@@ -1,0 +1,10 @@
+[flake8]
+per-file-ignores = 
+    # imported but unused
+    .\tests\test_cprint.py: F401
+exclude = 
+    .git
+    __pycache__
+    .pytest_cache
+    dist
+    build
