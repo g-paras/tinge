@@ -1,11 +1,31 @@
 from typing import Optional
 
-from .utils import InvalidColorError, COLORS, ON_COLORS
+from colorama import init  # type: ignore
+
+from .utils import COLORS, ON_COLORS, InvalidColorError
 
 RESET = COLORS["reset"]
 
+init()
+
 
 def colored(text: str, color: str, on_color: Optional[str] = '') -> str:
+    '''Output colored text in terminal
+
+    Parameter:
+        text: str
+        color: str
+        on_color: Optional[str]
+
+    Syntax:
+        >>>colored("Hello", "red", "white")
+
+    Available colors:
+        color: ["black", "red", "green", "yellow", "blue", "magenta",
+        "cyan", "white"]
+        on_color: ["grey", "red", "green", "yellow", "blue", "magenta",
+        "cyan", "white"]
+    '''
     if color in COLORS:
         color = COLORS[color]
     else:
