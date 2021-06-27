@@ -29,7 +29,7 @@ Installation Complete 👍
 ```python
 from tinge import colored
 
-print("This is red text", color="red")
+print(colored("This is red text", color="red"))
 ```
 
 
@@ -37,7 +37,7 @@ print("This is red text", color="red")
 ```python
 from tinge import colored
 
-print("Green on white","green", "white")
+print(colored("Green on white","green", "white"))
 ```
 
 ## Available Colors
