@@ -2,3 +2,5 @@ build
 dist
 __pycache__
 .pytest_cache
+Tinge.egg-info
+.mypy_cache
