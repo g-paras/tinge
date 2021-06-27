@@ -4,6 +4,7 @@ setup(
     name="Tinge",
     version="0.0.1",
     packages=["tinge"],
+    install_requires=["colorama"],
     url="",
     license="MIT License",
     author="Paras Gupta",
