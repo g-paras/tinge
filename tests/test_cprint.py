@@ -17,10 +17,16 @@ def test_invalid_color():
     try:
         print(colored(string, "raise"))
     except InvalidColorError:
-        print('Success')
+        print('Success: InvalidColorError occurred and handles')
+
+
+def test_red_on_white():
+    string = "This is red on white"
+    print(colored(string, "red", "white"))
 
 
 if __name__ == "__main__":
     test_red()
     test_green()
     test_invalid_color()
+    test_red_on_white()
