@@ -21,7 +21,7 @@ cd tinge
 python setup.py install
 ```
 
-Installation Complete :thumbs_up:
+Installation Complete 👍
 
 
 ## Example
@@ -31,8 +31,7 @@ from tinge import colored
 
 print("This is red text", color="red")
 ```
-Output
-<p style="color: red">This is red text</p>
+
 
 ### Foreground and Background
 ```python
@@ -40,5 +39,15 @@ from tinge import colored
 
 print("Green on white","green", "white")
 ```
-Output:
-<p><span style="color: green; background: white">Green on White</span></p>
+
+## Available Colors
+| Foreground | Background |
+|----------- | -----------|
+| Black | Grey |
+| Red | Red |
+| Green | Green |
+| Yellow | Yellow |
+| Blue | Blue |
+| Magenta | Magenta |
+| Cyan | Cyan |
+| White | White |
