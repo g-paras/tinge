@@ -7,6 +7,23 @@
 </h1>
 <p style="text-align: center">Output colored text in terminal</p>
 
+
+## Setup and Installation
+
+1. Clone this repository
+```bash
+git clone https://github.com/g-paras/tinge.git
+cd tinge
+```
+
+2. Install the module 
+```python
+python setup.py install
+```
+
+Installation Complete :thumbs_up:
+
+
 ## Example
 ### Foreground
 ```python
