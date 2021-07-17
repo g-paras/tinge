@@ -9,8 +9,8 @@ RESET = COLORS["reset"]
 init()
 
 
-def colored(text: str, color: str, on_color: Optional[str] = '') -> str:
-    '''Output colored text in terminal
+def colored(text: str, color: str, on_color: Optional[str] = "") -> str:
+    """Output colored text in terminal
 
     Parameter:
         text: str
@@ -25,7 +25,7 @@ def colored(text: str, color: str, on_color: Optional[str] = '') -> str:
         "cyan", "white"]
         on_color: ["grey", "red", "green", "yellow", "blue", "magenta",
         "cyan", "white"]
-    '''
+    """
     if color in COLORS:
         color = COLORS[color]
     else:

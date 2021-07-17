@@ -1,5 +1,6 @@
 class InvalidColorError(Exception):
-    '''Exception class for invalid colors'''
+    """Exception class for invalid colors"""
+
     pass
 
 
@@ -13,7 +14,7 @@ COLORS = {
     "magenta": "\u001b[35m",
     "cyan": "\u001b[36m",
     "white": "\u001b[37m",
-    "reset": "\u001b[0m"
+    "reset": "\u001b[0m",
 }
 
 # background colors
@@ -26,5 +27,5 @@ ON_COLORS = {
     "magenta": "\u001b[45m",
     "cyan": "\u001b[46m",
     "white": "\u001b[47m",
-    "": ""
+    "": "",
 }

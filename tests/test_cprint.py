@@ -3,13 +3,13 @@ from tinge import colored, InvalidColorError
 
 
 def test_red():
-    string = 'this is a red text'
-    print(colored(string, 'red'))
+    string = "this is a red text"
+    print(colored(string, "red"))
 
 
 def test_green():
-    string = 'this is a green text'
-    print(colored(string, 'green'))
+    string = "this is a green text"
+    print(colored(string, "green"))
 
 
 def test_invalid_color():
@@ -17,7 +17,7 @@ def test_invalid_color():
     try:
         print(colored(string, "raise"))
     except InvalidColorError:
-        print('Success: InvalidColorError occurred and handles')
+        print("Success: InvalidColorError occurred and handles")
 
 
 def test_red_on_white():

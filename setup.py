@@ -9,5 +9,5 @@ setup(
     license="MIT License",
     author="Paras Gupta",
     author_email="guptaparas039@gmail.com",
-    description="Colored text for terminal"
+    description="Colored text for terminal",
 )
