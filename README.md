@@ -24,7 +24,7 @@ cd tinge
 python setup.py install
 ```
 
-Installation Complete :thumbs_up:
+Installation Complete :thumbsup:
 
 ## Example
 
@@ -60,12 +60,12 @@ print(bold("This is bold"))
 from tinge import colored, italic, underline, bold
 
 print(colored(
-    underlined("This is red on white",)
+    underlined("This is red on white"),
     color="red",
     on_color="white"))
 
 print(colored(
-    italic("This is italic",),
+    italic("This is italic"),
     color="green"))
 ```
 
