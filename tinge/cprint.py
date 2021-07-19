@@ -9,7 +9,7 @@ RESET = COLORS["reset"]
 init()
 
 
-def colored(text: str, color: str, on_color: Optional[str] = "") -> str:
+def colored(text: str, color: str, on_color: str = "") -> str:
     """Output colored text in terminal
 
     Parameter:
