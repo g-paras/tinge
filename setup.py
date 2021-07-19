@@ -13,7 +13,7 @@ if platform.system() == "Windows":
 
 setup(
     name="Tinge",
-    version="0.0.2",
+    version="0.0.3",
     description="Colored text for terminal",
     long_description=README,
     long_description_content_type="text/markdown",
