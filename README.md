@@ -1,11 +1,5 @@
-<h1 style="text-align: center; font-weight: bold">
-    <span style="color: red">T</span>
-    <span style="color: blue">I</span>
-    <span style="color: yellow">N</span>
-    <span style="color:green">G</span>
-    <span style="color:magenta">E</span>
-</h1>
-<p style="text-align: center">Output colored text in terminal</p>
+<h1 align='center'>TINGE</h1>
+<p align='center'>Output Colored text in terminal</p>
 
 
 ## Setup and Installation
@@ -21,7 +15,7 @@ cd tinge
 python setup.py install
 ```
 
-Installation Complete 👍
+Installation Complete :thumbs_up:
 
 
 ## Example
