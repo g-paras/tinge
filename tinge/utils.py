@@ -27,5 +27,5 @@ ON_COLORS = {
     "magenta": "\u001b[45m",
     "cyan": "\u001b[46m",
     "white": "\u001b[47m",
-    "": "",
+    "default": "\u001b[49m",
 }
