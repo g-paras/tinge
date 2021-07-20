@@ -41,7 +41,46 @@ def colored(text: str, color: str, on_color: str = "default") -> str:
     return f"{on_color}{color}{text}{RESET}"
 
 
-def warn(text: str):
+def bold(text: str, color: str = "default", on_color: str = "default") -> str:
+    """Output colored bold text
+
+    Parameter:
+        text: str
+
+    Syntax:
+        >>> print(bold(text), color[Optional], color[Optional])
+    """
+
+    return colored(f"\u001b[1m{text}{RESET}", color, on_color)
+
+
+def italic(text: str, color: str = "default", on_color: str = "default") -> str:
+    """Output colored italic text
+
+    Parameter:
+        text: str
+
+    Syntax:
+        >>> print(italic(text, color[Optional], on_color[Optional]))
+    """
+
+    return colored(f"\u001b[3m{text}{RESET}", color, on_color)
+
+
+def underline(text: str, color: str = "default", on_color: str = "default") -> str:
+    """Output colored underline text
+
+    Parameter:
+        text: str
+
+    Syntax:
+        >>> print(underline(text), color[Optional], on_color[Optional])
+    """
+
+    return colored(f"\u001b[4m{text}{RESET}", color, on_color)
+
+
+def warn(text: str, strong: bool = True) -> str:
     """Output warning with yellow text
 
     Parameter:
@@ -50,11 +89,12 @@ def warn(text: str):
     Syntax:
         >>> print(warn(text))
     """
-
+    if strong:
+        return bold(text, "yellow")
     return colored(text, "yellow")
 
 
-def error(text: str):
+def error(text: str, strong: bool = True) -> str:
     """Output error with red text
 
     Parameter:
@@ -63,11 +103,12 @@ def error(text: str):
     Syntax:
         >>> print(error(text))
     """
-
+    if strong:
+        return bold(text, "red")
     return colored(text, "red")
 
 
-def info(text: str):
+def info(text: str, strong: bool = True) -> str:
     """Output info with blue text
 
     Parameter:
@@ -76,11 +117,12 @@ def info(text: str):
     Syntax:
         >>> print(info(text))
     """
-
+    if strong:
+        return bold(text, "blue")
     return colored(text, "blue")
 
 
-def success(text: str):
+def success(text: str, strong: bool = True) -> str:
     """Output success with green text
 
     Parameter:
@@ -89,44 +131,6 @@ def success(text: str):
     Syntax:
         >>> print(success(text))
     """
-
+    if strong:
+        return bold(text, "green")
     return colored(text, "green")
-
-
-def bold(text: str):
-    """Output bold text
-
-    Parameter:
-        text: str
-
-    Syntax:
-        >>> print(bold(text))
-    """
-
-    return f"\u001b[1m{text}{RESET}"
-
-
-def italic(text: str):
-    """Output italic text
-
-    Parameter:
-        text: str
-
-    Syntax:
-        >>> print(italic(text))
-    """
-
-    return f"\u001b[3m{text}{RESET}"
-
-
-def underline(text: str):
-    """Output underline text
-
-    Parameter:
-        text: str
-
-    Syntax:
-        >>> print(underline(text))
-    """
-
-    return f"\u001b[4m{text}{RESET}"

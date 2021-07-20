@@ -14,6 +14,7 @@ COLORS = {
     "magenta": "\u001b[35m",
     "cyan": "\u001b[36m",
     "white": "\u001b[37m",
+    "default": "\u001b[39m",
     "reset": "\u001b[0m",
 }
 
