@@ -1,6 +1,8 @@
 <h1 align='center'>TINGE</h1>
 <p align='center'>Output colored text in terminal</p>
 
+
+
 ## Setup and Installation
 
 ### Using pip
@@ -28,6 +30,7 @@ Installation Complete :thumbsup:
 
 ## Example
 
+
 ### Foreground
 
 ```python
@@ -46,6 +49,8 @@ print(colored("Green on white", color="green", on_color="white"))
 
 ### Styling
 
+> underline & italic are not supported on windows
+
 ```python
 from tinge import italic, underline, bold
 
@@ -59,14 +64,27 @@ print(bold("This is bold"))
 ```python
 from tinge import colored, italic, underline, bold
 
-print(colored(
-    underlined("This is red on white"),
+print(
+    underline("This is red on white",
     color="red",
-    on_color="white"))
+    on_color="white")
+)
 
-print(colored(
-    italic("This is italic"),
-    color="green"))
+print(
+    italic("This is italic",
+    color="green")
+)
+```
+
+### Specific Use Case
+
+```python
+from tinge import warn, error, info, success
+
+print(warn("This is warning")) # yellow bold text
+print(info("This is to inform")) # blue bold text
+print(success("Success", strong=False)) # green normal text
+print(error("Error: File Missing")) # red bold text
 ```
 
 ## Available Colors and Styles
@@ -85,13 +103,13 @@ print(colored(
 | Style | Bold | Italic | Underline |
 | ----- | ---- | ------ | --------- |
 
-| Function    | Parameters            | Use for               |
-| ----------- | --------------------- | --------------------- |
-| `colored`   | text, color, on_color | Colored text          |
-| `italic`    | text                  | Italic text           |
-| `underline` | text                  | Underlined text       |
-| `bold`      | text                  | Bold text             |
-| `warn`      | text                  | Yellow Warning text   |
-| `error`     | text                  | Red Error text        |
-| `info`      | text                  | Blue Information text |
-| `success`   | text                  | Green Success text    |
+| Function    | Parameters                   | Use for                    |
+| ----------- | ---------------------------- | -------------------------- |
+| `colored`   | *text8*, *color*, *on_color* | Colored text               |
+| `italic`    | *text8*, *color*, *on_color* | Italic colored text        |
+| `underline` | *text8*, *color*, *on_color* | Underlined colored text    |
+| `bold`      | *text8*, *color*, *on_color* | Bold colored text          |
+| `warn`      | *text8*                      | Yellow Bold Warning text   |
+| `error`     | *text8*                      | Red Bold Error text        |
+| `info`      | *text8*                      | Blue Bold Information text |
+| `success`   | *text8*                      | Green Bold Success text    |
