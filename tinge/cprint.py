@@ -46,9 +46,11 @@ def bold(text: str, color: str = "default", on_color: str = "default") -> str:
 
     Parameter:
         text: str
+        color: Optional[str]
+        on_color: Optional[str]
 
     Syntax:
-        >>> print(bold(text), color[Optional], color[Optional])
+        >>> print(bold(text, color[Optional], color[Optional]))
     """
 
     return colored(f"\u001b[1m{text}{RESET}", color, on_color)
@@ -59,6 +61,8 @@ def italic(text: str, color: str = "default", on_color: str = "default") -> str:
 
     Parameter:
         text: str
+        color: Optional[str]
+        on_color: Optional[str]
 
     Syntax:
         >>> print(italic(text, color[Optional], on_color[Optional]))
@@ -72,65 +76,79 @@ def underline(text: str, color: str = "default", on_color: str = "default") -> s
 
     Parameter:
         text: str
+        color: Optional[str]
+        on_color: Optional[str]
 
     Syntax:
-        >>> print(underline(text), color[Optional], on_color[Optional])
+        >>> print(underline(text, color[Optional], on_color[Optional]))
     """
 
     return colored(f"\u001b[4m{text}{RESET}", color, on_color)
 
 
-def warn(text: str, strong: bool = True) -> str:
+def warn(text: str, strong: bool = True) -> None:
     """Output warning with yellow text
 
     Parameter:
         text: str
+        strong: Optional[bool]
 
     Syntax:
-        >>> print(warn(text))
+        >>> warn(text)
     """
     if strong:
-        return bold(text, "yellow")
-    return colored(text, "yellow")
+        print(bold(text, "yellow"))
+        return
+    print(colored(text, "yellow"))
+    return
 
 
-def error(text: str, strong: bool = True) -> str:
+def error(text: str, strong: bool = True) -> None:
     """Output error with red text
 
     Parameter:
         text: str
+        strong: Optional[bool]
 
     Syntax:
-        >>> print(error(text))
+        >>> error(text)
     """
     if strong:
-        return bold(text, "red")
-    return colored(text, "red")
+        print(bold(text, "red"))
+        return
+    print(colored(text, "red"))
+    return
 
 
-def info(text: str, strong: bool = True) -> str:
+def info(text: str, strong: bool = True) -> None:
     """Output info with blue text
 
     Parameter:
         text: str
+        strong: Optional[bool]
 
     Syntax:
-        >>> print(info(text))
+        >>> info(text)
     """
     if strong:
-        return bold(text, "blue")
-    return colored(text, "blue")
+        print(bold(text, "blue"))
+        return
+    print(colored(text, "blue"))
+    return
 
 
-def success(text: str, strong: bool = True) -> str:
+def success(text: str, strong: bool = True) -> None:
     """Output success with green text
 
     Parameter:
         text: str
+        strong: Optional[bool]
 
     Syntax:
-        >>> print(success(text))
+        >>> success(text)
     """
     if strong:
-        return bold(text, "green")
-    return colored(text, "green")
+        print(bold(text, "green"))
+        return
+    print(colored(text, "green"))
+    return
