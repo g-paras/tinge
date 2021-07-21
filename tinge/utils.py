@@ -1,8 +1,6 @@
 class InvalidColorError(Exception):
     """Exception class for invalid colors"""
 
-    pass
-
 
 # foreground colors
 COLORS = {
