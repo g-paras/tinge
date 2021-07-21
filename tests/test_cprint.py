@@ -1,5 +1,6 @@
 import fixpath
-from tinge import colored, InvalidColorError
+
+from tinge import InvalidColorError, colored
 
 
 def test_red():
@@ -15,7 +16,7 @@ def test_green():
 def test_invalid_color():
     string = "This should raise an error"
     try:
-        print(colored(string, "raise"))
+        print(colored(string, "raise")) # invalid color name
     except InvalidColorError:
         print("Success: InvalidColorError occurred and handles")
 
