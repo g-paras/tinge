@@ -1,8 +1,7 @@
-from .cprint import colored, warn, error, info, success, bold, underline, italic
+from .cprint import bold, colored, error, info, italic, success, underline, warn
 from .utils import InvalidColorError
 
-
-__version__ = "0.0.4"
+__version__ = "0.0.5"
 __all__ = [
     "colored",
     "warn",
