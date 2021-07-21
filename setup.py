@@ -1,6 +1,11 @@
 import pathlib
 import platform
+
 from setuptools import setup
+
+from tinge import __version__
+
+VERSION = __version__
 
 HERE = pathlib.Path(__file__).parent
 
@@ -13,7 +18,7 @@ if platform.system() == "Windows":
 
 setup(
     name="Tinge",
-    version="0.0.4",
+    version=VERSION,
     description="Colored text for terminal",
     long_description=README,
     long_description_content_type="text/markdown",
