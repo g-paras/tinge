@@ -77,14 +77,15 @@ print(
 ```
 
 ### Specific Use Case
+These method prints by default & return None
 
 ```python
 from tinge import warn, error, info, success
 
-print(warn("This is warning")) # yellow bold text
-print(info("This is to inform")) # blue bold text
-print(success("Success", strong=False)) # green normal text
-print(error("Error: File Missing")) # red bold text
+warn("This is warning") # yellow bold text
+info("This is to inform") # blue bold text
+success("Success", strong=False) # green normal text
+error("Error: File Missing") # red bold text
 ```
 
 ## Available Colors and Styles
@@ -105,11 +106,11 @@ print(error("Error: File Missing")) # red bold text
 
 | Function    | Parameters                   | Use for                    |
 | ----------- | ---------------------------- | -------------------------- |
-| `colored`   | *text8*, *color*, *on_color* | Colored text               |
-| `italic`    | *text8*, *color*, *on_color* | Italic colored text        |
-| `underline` | *text8*, *color*, *on_color* | Underlined colored text    |
-| `bold`      | *text8*, *color*, *on_color* | Bold colored text          |
-| `warn`      | *text8*                      | Yellow Bold Warning text   |
-| `error`     | *text8*                      | Red Bold Error text        |
-| `info`      | *text8*                      | Blue Bold Information text |
-| `success`   | *text8*                      | Green Bold Success text    |
+| `colored`   | *text*, *color*, *on_color*  | Colored text               |
+| `italic`    | *text*, *color*, *on_color*  | Italic colored text        |
+| `underline` | *text*, *color*, *on_color*  | Underlined colored text    |
+| `bold`      | *text*, *color*, *on_color*  | Bold colored text          |
+| `warn`      | *text*                       | Yellow Bold Warning text   |
+| `error`     | *text*                       | Red Bold Error text        |
+| `info`      | *text*                       | Blue Bold Information text |
+| `success`   | *text*                       | Green Bold Success text    |
