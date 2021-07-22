@@ -1,4 +1,7 @@
+"""Implementation of all functions"""
+
 import platform
+from os import get_terminal_size
 
 from .utils import COLORS, ON_COLORS, InvalidColorError
 
@@ -52,7 +55,6 @@ def bold(text: str, color: str = "default", on_color: str = "default") -> str:
     Syntax:
         >>> print(bold(text, color[Optional], color[Optional]))
     """
-
     return colored(f"\u001b[1m{text}{RESET}", color, on_color)
 
 
@@ -67,7 +69,6 @@ def italic(text: str, color: str = "default", on_color: str = "default") -> str:
     Syntax:
         >>> print(italic(text, color[Optional], on_color[Optional]))
     """
-
     return colored(f"\u001b[3m{text}{RESET}", color, on_color)
 
 
@@ -82,7 +83,6 @@ def underline(text: str, color: str = "default", on_color: str = "default") -> s
     Syntax:
         >>> print(underline(text, color[Optional], on_color[Optional]))
     """
-
     return colored(f"\u001b[4m{text}{RESET}", color, on_color)
 
 
@@ -152,3 +152,24 @@ def success(text: str, strong: bool = True) -> None:
         return
     print(colored(text, "green"))
     return
+
+
+def hline(
+    text: str = "",
+    sep: str = "-",
+    color: str = "default",
+    on_color: str = "default",
+) -> None:
+    """Print horizontal line with length equal to width of terminal
+
+    Parameter:
+        text: Optional[str]
+        sep: Optional[str]
+        color: Optional[str]
+        on_color: Optional[str]
+
+    Syntax:
+        >>> hline("Hello", color="red")
+    """
+    width, _ = get_terminal_size()
+    print(colored(text.center(width + 13, sep), color, on_color))

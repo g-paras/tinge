@@ -1,3 +1,5 @@
+"""Utilities for cprint i.e COLORS, ONCOLORS AND Exception Class"""
+
 class InvalidColorError(Exception):
     """Exception class for invalid colors"""
 
