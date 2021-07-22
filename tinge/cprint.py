@@ -172,4 +172,4 @@ def hline(
         >>> hline("Hello", color="red")
     """
     width, _ = get_terminal_size()
-    print(colored(text.center(width + 13, sep), color, on_color))
+    print(colored(text.center(width - 1, sep), color, on_color))
