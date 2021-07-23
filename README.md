@@ -5,7 +5,7 @@
 <a href="https://www.python.com"><img alt="made with python" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a>
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/Code%20Style-Black-000000.svg"></a>
 <a href="https://github.com/g-paras/tinge/blob/master/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
-<a href="https://pypi.org/project/black/"><img alt="PyPI" src="https://img.shields.io/pypi/v/tinge"></a>
+<a href="https://pypi.org/project/tinge/"><img alt="PyPI" src="https://img.shields.io/pypi/v/tinge"></a>
 <a href="https://pepy.tech/project/tinge"><img alt="Downloads" src="https://pepy.tech/badge/tinge"></a>
 </p>
 
