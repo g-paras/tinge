@@ -2,11 +2,36 @@
 <h2 align='center'>Output colored text in terminal</h2>
 
 <p align='center'>
-<a href="https://www.python.com"><img alt="made with python" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a>
-<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/Code%20Style-Black-000000.svg"></a>
-<a href="https://github.com/g-paras/tinge/blob/master/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
-<a href="https://pypi.org/project/tinge/"><img alt="PyPI" src="https://img.shields.io/pypi/v/tinge"></a>
-<a href="https://pepy.tech/project/tinge"><img alt="Downloads" src="https://static.pepy.tech/personalized-badge/tinge?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads"></a>
+    <a href="https://www.python.com">
+        <img 
+            alt="made with python" 
+            src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"
+        />
+    </a>
+    <a href="https://github.com/psf/black">
+        <img 
+            alt="Code style: black" 
+            src="https://img.shields.io/badge/Code%20Style-Black-000000.svg"
+        />
+    </a>
+    <a href="https://github.com/g-paras/tinge/blob/master/LICENSE">
+        <img 
+            alt="License: MIT" 
+            src="https://img.shields.io/badge/License-MIT-yellow.svg"
+        />
+    </a>
+    <a href="https://pypi.org/project/tinge/">
+        <img 
+            alt="PyPI" 
+            src="https://img.shields.io/pypi/v/tinge"
+        />
+    </a>
+    <a href="https://pepy.tech/project/tinge">
+        <img 
+            alt="Downloads" 
+            src="https://static.pepy.tech/personalized-badge/tinge?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads"
+        />
+    </a>
 </p>
 
 ## Setup and Installation
@@ -35,7 +60,6 @@ python setup.py install
 Installation Complete :thumbsup:
 
 ## Example
-
 
 ### Foreground
 
@@ -83,6 +107,7 @@ print(
 ```
 
 ### Specific Use Case
+
 These method prints by default & return None
 
 ```python
@@ -110,13 +135,13 @@ error("Error: File Missing") # red bold text
 | Style | Bold | Italic | Underline |
 | ----- | ---- | ------ | --------- |
 
-| Function    | Parameters                   | Use for                    |
-| ----------- | ---------------------------- | -------------------------- |
-| `colored`   | *text*, *color*, *on_color*  | Colored text               |
-| `italic`    | *text*, *color*, *on_color*  | Italic colored text        |
-| `underline` | *text*, *color*, *on_color*  | Underlined colored text    |
-| `bold`      | *text*, *color*, *on_color*  | Bold colored text          |
-| `warn`      | *text*                       | Yellow Bold Warning text   |
-| `error`     | *text*                       | Red Bold Error text        |
-| `info`      | *text*                       | Blue Bold Information text |
-| `success`   | *text*                       | Green Bold Success text    |
+| Function    | Parameters                  | Use for                    |
+| ----------- | --------------------------- | -------------------------- |
+| `colored`   | _text_, _color_, _on_color_ | Colored text               |
+| `italic`    | _text_, _color_, _on_color_ | Italic colored text        |
+| `underline` | _text_, _color_, _on_color_ | Underlined colored text    |
+| `bold`      | _text_, _color_, _on_color_ | Bold colored text          |
+| `warn`      | _text_                      | Yellow Bold Warning text   |
+| `error`     | _text_                      | Red Bold Error text        |
+| `info`      | _text_                      | Blue Bold Information text |
+| `success`   | _text_                      | Green Bold Success text    |
