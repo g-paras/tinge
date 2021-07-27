@@ -16,7 +16,7 @@ def test_green():
 def test_invalid_color():
     string = "This should raise an error"
     try:
-        print(colored(string, "raise")) # invalid color name
+        print(colored(string, "raise"))  # invalid color name
     except InvalidColorError:
         print("Success: InvalidColorError occurred and handles")
 
