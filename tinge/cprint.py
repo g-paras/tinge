@@ -44,6 +44,26 @@ def colored(text: str, color: str, on_color: str = "default") -> str:
     return f"{on_color}{color}{text}{RESET}"
 
 
+def cprint(text: str, color: str, on_color: str = "default") -> None:
+    """Print colored text
+
+    Parameter:
+        text: str
+        color: str
+        on_color: Optional[str]
+
+    Syntax:
+        >>>cprint("Hello", "red", "white")
+
+    Available colors:
+        color: ["black", "red", "green", "yellow", "blue", "magenta",
+        "cyan", "white"]
+        on_color: ["grey", "red", "green", "yellow", "blue", "magenta",
+        "cyan", "white"]
+    """
+    print(colored(text, color, on_color))
+
+
 def bold(text: str, color: str = "default", on_color: str = "default") -> str:
     """Output colored bold text
 
@@ -171,5 +191,10 @@ def hline(
     Syntax:
         >>> hline("Hello", color="red")
     """
-    width, _ = get_terminal_size()
-    print(colored(text.center(width - 1, sep), color, on_color))
+    # get_terminal_size function raise OSError in Jupyter Notebooks
+    try:
+        width, _ = get_terminal_size()
+    except OSError:
+        # set width to 80 according to black
+        width = 80
+    cprint((f" {text} " if text else "").center(width - 1, sep), color, on_color)
