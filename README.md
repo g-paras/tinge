@@ -1,5 +1,5 @@
 <h1 align='center'>TINGE</h1>
-<h2 align='center'>Output colored text in terminal</h2>
+<h2 align='center'>Output colored terminal text from Python</h2>
 
 <p align='center'>
     <a href="https://www.python.com">
@@ -68,7 +68,12 @@ from tinge import colored
 
 print(colored("This is red text", color="red"))
 ```
+Or
+```python
+from tinge import cprint
 
+cprint("Hello there", color="green")
+```
 ### Foreground and Background
 
 ```python
@@ -76,7 +81,12 @@ from tinge import colored
 
 print(colored("Green on white", color="green", on_color="white"))
 ```
+Or
+```python
+from tinge import cprint
 
+cprint(colored("Red on black", color="red", on_color="black"))
+```
 ### Styling
 
 > underline & italic are not supported on windows
@@ -106,7 +116,7 @@ print(
 )
 ```
 
-### Specific Use Case
+### Specific Use Cases
 
 These method prints by default & return None
 
@@ -118,6 +128,17 @@ info("This is to inform") # blue bold text
 success("Success", strong=False) # green normal text
 error("Error: File Missing") # red bold text
 ```
+
+### Horizontal Line (width equal to terminal width)
+```python
+from tinge import hline
+
+hline()  # a horizontal line
+hline(text="Hello")  # horizontal line with text in middle
+hline(text="Hello", color="red") # red color line with text in middle
+help(hline)  # for more info
+```
+
 
 ## Available Colors and Styles
 
@@ -145,3 +166,9 @@ error("Error: File Missing") # red bold text
 | `error`     | _text_                      | Red Bold Error text        |
 | `info`      | _text_                      | Blue Bold Information text |
 | `success`   | _text_                      | Green Bold Success text    |
+
+
+## *`__version__` = 0.0.5*, What's new?
+- `colorama` is no longer a requirement
+- `hline` method for horizontal lines
+- `cprint` method to directly print colored text
