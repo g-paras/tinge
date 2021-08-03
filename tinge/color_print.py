@@ -1,16 +1,14 @@
 """Implementation of all functions"""
 
 import platform
-from os import get_terminal_size
+from os import get_terminal_size, system
 
 from .utils import COLORS, ON_COLORS, InvalidColorError
 
 RESET = COLORS["reset"]
 
 if platform.system() == "Windows":
-    from colorama import init  # type: ignore
-
-    init()
+    system("")
 
 
 def colored(text: str, color: str, on_color: str = "default") -> str:
