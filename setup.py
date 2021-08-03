@@ -1,8 +1,10 @@
+# stdlib imports
 import pathlib
-import platform
 
+# external imports
 from setuptools import setup
 
+# local imports
 from tinge import __version__
 
 VERSION = __version__
@@ -10,11 +12,6 @@ VERSION = __version__
 HERE = pathlib.Path(__file__).parent
 
 README = (HERE / "README.md").read_text()
-
-INSTALL_REQUIRES = []
-
-if platform.system() == "Windows":
-    INSTALL_REQUIRES.append("colorama")
 
 setup(
     name="Tinge",
@@ -38,5 +35,4 @@ setup(
         "Topic :: Utilities",
     ],
     packages=["tinge"],
-    install_requires=INSTALL_REQUIRES,
 )
