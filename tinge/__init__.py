@@ -1,6 +1,6 @@
 """Entry point for import"""
 
-from .cprint import (
+from .color_print import (
     bold,
     colored,
     cprint,
