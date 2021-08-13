@@ -85,7 +85,7 @@ Or
 ```python
 from tinge import cprint
 
-cprint(colored("Red on black", color="red", on_color="black"))
+cprint("Red on black", color="red", on_color="black")
 ```
 ### Styling
 
