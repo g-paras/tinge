@@ -16,6 +16,7 @@ COLORS = {
     "cyan": "\u001b[36m",
     "white": "\u001b[37m",
     "default": "\u001b[39m",
+    "saffron": "\u001b[38;5;208m",
     "reset": "\u001b[0m",
 }
 
@@ -29,5 +30,6 @@ ON_COLORS = {
     "magenta": "\u001b[45m",
     "cyan": "\u001b[46m",
     "white": "\u001b[47m",
+    "saffron": "\u001b[48;5;208m",
     "default": "\u001b[49m",
 }

@@ -5,3 +5,4 @@ __pycache__
 Tinge.egg-info
 .mypy_cache
 .vscode
+*.pyc

@@ -34,12 +34,22 @@
     </a>
 </p>
 
+## Independence Day Special
+
+![](img/ezgif.com-gif-maker.gif)
+
 ## Setup and Installation
 
 ### Using pip
 
 ```bash
 pip install tinge
+```
+
+Or upgrade current version:
+
+```bash
+pip install --upgrade tinge
 ```
 
 ### For developers / Contributors
@@ -68,12 +78,15 @@ from tinge import colored
 
 print(colored("This is red text", color="red"))
 ```
+
 Or
+
 ```python
 from tinge import cprint
 
 cprint("Hello there", color="green")
 ```
+
 ### Foreground and Background
 
 ```python
@@ -81,12 +94,15 @@ from tinge import colored
 
 print(colored("Green on white", color="green", on_color="white"))
 ```
+
 Or
+
 ```python
 from tinge import cprint
 
 cprint("Red on black", color="red", on_color="black")
 ```
+
 ### Styling
 
 > underline & italic are not supported on windows
@@ -130,6 +146,7 @@ error("Error: File Missing") # red bold text
 ```
 
 ### Horizontal Line (width equal to terminal width)
+
 ```python
 from tinge import hline
 
@@ -138,7 +155,6 @@ hline(text="Hello")  # horizontal line with text in middle
 hline(text="Hello", color="red") # red color line with text in middle
 help(hline)  # for more info
 ```
-
 
 ## Available Colors and Styles
 
@@ -167,8 +183,8 @@ help(hline)  # for more info
 | `info`      | _text_                      | Blue Bold Information text |
 | `success`   | _text_                      | Green Bold Success text    |
 
+## _`__version__` = 0.0.5_, What's new?
 
-## *`__version__` = 0.0.5*, What's new?
 - `colorama` is no longer a requirement
 - `hline` method for horizontal lines
 - `cprint` method to directly print colored text
