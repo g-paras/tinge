@@ -7,3 +7,4 @@ Tinge.egg-info
 .vscode
 *.pyc
 .idea
+*.ipynb
