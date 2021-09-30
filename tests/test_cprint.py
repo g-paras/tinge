@@ -1,11 +1,9 @@
 import fixpath
 
 from tinge import InvalidColorError, colored
-import pytest
 
 
 def test_red():
-    """check red color is working or not"""
     string = "this is a red text"
     print(colored(string, "red"))
 
@@ -17,8 +15,10 @@ def test_green():
 
 def test_invalid_color():
     string = "This should raise an error"
-    with pytest.raises(InvalidColorError):
+    try:
         print(colored(string, "raise"))  # invalid color name
+    except InvalidColorError:
+        print("Success: InvalidColorError occurred and handles")
 
 
 def test_red_on_white():

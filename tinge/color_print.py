@@ -172,98 +172,7 @@ def success(text: str, strong: bool = True) -> None:
     return
 
 
-def red(text: str, on_color: str = "default"):
-    """output formatted red text
-
-    Parameter:
-        text: str
-        on_color: Optonal[str]
-
-    Syntax:
-        >>> red(text)
-    """
-    return colored(text, "red", on_color=on_color)
-
-
-def white(text: str, on_color: str = "default"):
-    """output formatted white text
-
-    Parameter:
-        text: str
-        on_color: Optonal[str]
-
-    Syntax:
-        >>> white(text)
-    """
-    return colored(text, "white", on_color)
-
-
-def black(text: str, on_color: str = "default"):
-    """output formatted black text
-
-    Parameter:
-        text: str
-        on_color: Optonal[str]
-
-    Syntax:
-        >>> black(text)
-    """
-    return colored(text, "black", on_color)
-
-
-def blue(text: str, on_color: str = "default"):
-    """output formatted blue text
-
-    Parameter:
-        text: str
-        on_color: Optonal[str]
-
-    Syntax:
-        >>> blue(text)
-    """
-    return colored(text, "blue", on_color)
-
-
-def green(text: str, on_color: str = "default"):
-    """output formatted green text
-
-    Parameter:
-        text: str
-        on_color: Optonal[str]
-
-    Syntax:
-        >>> green(text)
-    """
-    return colored(text, "green", on_color)
-
-
-def yellow(text: str, on_color: str = "default"):
-    """output formatted yellow text
-
-    Parameter:
-        text: str
-        on_color: Optonal[str]
-
-    Syntax:
-        >>> yellow(text)
-    """
-    return colored(text, "yellow", on_color)
-
-
-def cyan(text: str, on_color: str = "default"):
-    """output formatted cyan text
-
-    Parameter:
-        text: str
-        on_color: Optonal[str]
-
-    Syntax:
-        >>> cyan(text)
-    """
-    return colored(text, "cyan", on_color)
-
-
-def line(
+def hline(
     text: str = "",
     sep: str = "-",
     color: str = "default",
@@ -278,7 +187,7 @@ def line(
         on_color: Optional[str]
 
     Syntax:
-        >>> line("Hello", color="red")
+        >>> hline("Hello", color="red")
     """
     # get_terminal_size function raise OSError in Jupyter Notebooks
     try:

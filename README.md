@@ -148,12 +148,12 @@ error("Error: File Missing") # red bold text
 ### Horizontal Line (width equal to terminal width)
 
 ```python
-from tinge import line
+from tinge import hline
 
-line()  # a horizontal line
-line(text="Hello")  # horizontal line with text in middle
-line(text="Hello", color="red") # red color line with text in middle
-help(line)  # for more info
+hline()  # a horizontal line
+hline(text="Hello")  # horizontal line with text in middle
+hline(text="Hello", color="red") # red color line with text in middle
+help(hline)  # for more info
 ```
 
 ## Available Colors and Styles
@@ -186,5 +186,5 @@ help(line)  # for more info
 ## _`__version__` = 0.0.5_, What's new?
 
 - `colorama` is no longer a requirement
-- `line` method for horizontal lines
+- `hline` method for horizontal lines
 - `cprint` method to directly print colored text
