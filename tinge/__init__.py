@@ -21,7 +21,7 @@ from .color_print import (
 )
 from .utils import InvalidColorError
 
-__version__ = "0.0.6"
+__version__ = "0.0.7"
 __all__ = [
     "red",
     "green",
