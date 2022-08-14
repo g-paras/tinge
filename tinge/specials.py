@@ -33,7 +33,7 @@ def banner():
     except OSError:
         length = 80
 
-    sleep_time = 0.15
+    sleep_time = 0.1
 
     main_text = "Thank You for using Tinge, made with ❤  by Paras Gupta"
     text = main_text + " "*max(0, length-len(main_text))
