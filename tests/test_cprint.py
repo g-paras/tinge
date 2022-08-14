@@ -1,4 +1,4 @@
-import fixpath
+import fixpath # to insert tinge module in path
 
 from tinge import InvalidColorError, colored
 import pytest
