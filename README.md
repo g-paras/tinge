@@ -36,7 +36,7 @@
 
 ## Independence Day Special
 
-![](img/ezgif.com-gif-maker.gif)
+![](img/upd.gif)
 
 ## Setup and Installation :gear:
 
