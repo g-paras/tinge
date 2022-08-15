@@ -18,9 +18,9 @@ def flag():
 
     print()
     print(
-        " " * ((length - 26) // 2),
+        " " * ((length - 23) // 2),
         bold("Happy", "saffron"),
-        bold("76th Independence", "white"),
+        bold("Independence", "white"),
         bold("Day", "green"),
     )
 
