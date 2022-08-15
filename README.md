@@ -1,4 +1,4 @@
-<h1 align='center'>TINGE</h1>
+<h1 align='center'>TINGE :sparkles:</h1>
 <h2 align='center'>Output colored terminal text from Python</h2>
 
 <p align='center'>
@@ -38,7 +38,7 @@
 
 ![](img/upd.gif)
 
-## Setup and Installation
+## Setup and Installation :gear:
 
 ### Using pip
 
@@ -52,7 +52,7 @@ Or upgrade current version:
 pip install --upgrade tinge
 ```
 
-### For developers / Contributors
+### For developers / Contributors 
 
 1. Clone this repository
 
@@ -67,7 +67,7 @@ cd tinge
 python setup.py install
 ```
 
-Installation Complete :thumbsup:
+Installation Complete :tada:
 
 ## Example
 
