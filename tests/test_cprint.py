@@ -1,6 +1,6 @@
 import fixpath # to insert tinge module in path
 
-from tinge import InvalidColorError, colored
+from tinge import InvalidColorError, colored, italic, underline
 import pytest
 
 
@@ -24,6 +24,16 @@ def test_invalid_color():
 def test_red_on_white():
     string = "This is red on white"
     print(colored(string, "red", "white"))
+
+
+def test_italic():
+    string = "some random  string"
+    print(italic(string))
+
+
+def test_underline():
+    string = "another random string"
+    print(underline(string))
 
 
 if __name__ == "__main__":
