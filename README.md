@@ -61,7 +61,7 @@ git clone https://github.com/g-paras/tinge.git
 cd tinge
 ```
 
-2. Install the module
+2. ### Install the module
 
 ```python
 python setup.py install
